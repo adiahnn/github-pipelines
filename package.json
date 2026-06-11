@@ -2,10 +2,12 @@
   "name": "github-pipelines",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "run": "node index.js",
-    "test": "node test.js"
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "tsx src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/adiahnn/github-pipelines/issues"
   },
-  "homepage": "https://github.com/adiahnn/github-pipelines#readme"
+  "homepage": "https://github.com/adiahnn/github-pipelines#readme",
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
 }
